@@ -1,0 +1,58 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 40px);
+  grid-template-rows: repeat(10, 40px);
+  gap: 5px;
+  margin: 20px auto;
+  width: max-content;
+}
+
+.grid-cell {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  box-sizing: border-box;
+}
+
+.selected {
+  background-color: #90ee90;
+}
+
+.word-list {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.word-list li {
+  font-size: 18px;
+  margin: 5px 0;
+  text-decoration: none;
+}
+
+.word-list li.found {
+  text-decoration: line-through;
+  color: #d3d3d3;
+}
